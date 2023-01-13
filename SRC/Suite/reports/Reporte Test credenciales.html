@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-10-06 14:46:24</p>
+                <p class='attribute'><strong>Duration: </strong>122.99 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 3, Pass: 1, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>SRC.Test.test_credenciales.test_credenciales_002.TCcedenciales002</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_credenciales_002</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Test Completo
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 1 -- Duration: 42.60 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>SRC.Test.test_credenciales.test_credenciales_001.TCcedenciales001</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_credenciales_001</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Test Completo
+</p><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <span _ngcontent-isj-c85="" class="navbar-toggler-icon"></span> is not clickable at point (38, 24). Other element would receive the click: <div _ngcontent-isj-c85="" class="side-menu-content pr-3 ng-star-inserted">...</div>
+  (Session info: headless chrome=105.0.5195.127)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011E78B3+2193587]
+	Ordinal0 [0x01180681+1771137]
+	Ordinal0 [0x010941A8+803240]
+	Ordinal0 [0x010C8C84+1019012]
+	Ordinal0 [0x010C6C48+1010760]
+	Ordinal0 [0x010C493B+1001787]
+	Ordinal0 [0x010C3699+997017]
+	Ordinal0 [0x010B9223+954915]
+	Ordinal0 [0x010DD7AC+1103788]
+	Ordinal0 [0x010B8C04+953348]
+	Ordinal0 [0x010DD9C4+1104324]
+	Ordinal0 [0x010EDAE2+1170146]
+	Ordinal0 [0x010DD5C6+1103302]
+	Ordinal0 [0x010B77E0+948192]
+	Ordinal0 [0x010B86E6+952038]
+	GetHandleVerifier [0x01490CB2+2738370]
+	GetHandleVerifier [0x014821B8+2678216]
+	GetHandleVerifier [0x012717AA+512954]
+	GetHandleVerifier [0x01270856+509030]
+	Ordinal0 [0x0118743B+1799227]
+	Ordinal0 [0x0118BB68+1817448]
+	Ordinal0 [0x0118BC55+1817685]
+	Ordinal0 [0x01195230+1856048]
+	BaseThreadInitThunk [0x75DEFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77E27B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E27B2E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\AUTOMATION WEB MEDIFE\SRC\Test\test_credenciales\test_credenciales_001.py", line 80, in test_credenciales_001
+    self.page_object_credenciales.click_menu_hamburgesa()
+  File "D:\AUTOMATION WEB MEDIFE\SRC\PageObjects\Modulos\page_object_credenciales.py", line 28, in click_menu_hamburgesa
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.menu_hamburgesa)).click()
+  File "D:\Automationprueba\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 81, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\Automationprueba\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 710, in _execute
+    return self._parent.execute(command, params)
+  File "D:\Automationprueba\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "D:\Automationprueba\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span _ngcontent-isj-c85="" class="navbar-toggler-icon"></span> is not clickable at point (38, 24). Other element would receive the click: <div _ngcontent-isj-c85="" class="side-menu-content pr-3 ng-star-inserted">...</div>
+  (Session info: headless chrome=105.0.5195.127)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011E78B3+2193587]
+	Ordinal0 [0x01180681+1771137]
+	Ordinal0 [0x010941A8+803240]
+	Ordinal0 [0x010C8C84+1019012]
+	Ordinal0 [0x010C6C48+1010760]
+	Ordinal0 [0x010C493B+1001787]
+	Ordinal0 [0x010C3699+997017]
+	Ordinal0 [0x010B9223+954915]
+	Ordinal0 [0x010DD7AC+1103788]
+	Ordinal0 [0x010B8C04+953348]
+	Ordinal0 [0x010DD9C4+1104324]
+	Ordinal0 [0x010EDAE2+1170146]
+	Ordinal0 [0x010DD5C6+1103302]
+	Ordinal0 [0x010B77E0+948192]
+	Ordinal0 [0x010B86E6+952038]
+	GetHandleVerifier [0x01490CB2+2738370]
+	GetHandleVerifier [0x014821B8+2678216]
+	GetHandleVerifier [0x012717AA+512954]
+	GetHandleVerifier [0x01270856+509030]
+	Ordinal0 [0x0118743B+1799227]
+	Ordinal0 [0x0118BB68+1817448]
+	Ordinal0 [0x0118BC55+1817685]
+	Ordinal0 [0x01195230+1856048]
+	BaseThreadInitThunk [0x75DEFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77E27B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E27B2E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 41.12 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>SRC.Test.test_credenciales.test_credenciales_003.TCcedenciales003</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_credenciales_003</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Test Completo
+</p><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <span _ngcontent-fmn-c85="" class="navbar-toggler-icon"></span> is not clickable at point (38, 24). Other element would receive the click: <div _ngcontent-fmn-c85="" class="side-menu-content pr-3 ng-star-inserted">...</div>
+  (Session info: headless chrome=105.0.5195.127)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011E78B3+2193587]
+	Ordinal0 [0x01180681+1771137]
+	Ordinal0 [0x010941A8+803240]
+	Ordinal0 [0x010C8C84+1019012]
+	Ordinal0 [0x010C6C48+1010760]
+	Ordinal0 [0x010C493B+1001787]
+	Ordinal0 [0x010C3699+997017]
+	Ordinal0 [0x010B9223+954915]
+	Ordinal0 [0x010DD7AC+1103788]
+	Ordinal0 [0x010B8C04+953348]
+	Ordinal0 [0x010DD9C4+1104324]
+	Ordinal0 [0x010EDAE2+1170146]
+	Ordinal0 [0x010DD5C6+1103302]
+	Ordinal0 [0x010B77E0+948192]
+	Ordinal0 [0x010B86E6+952038]
+	GetHandleVerifier [0x01490CB2+2738370]
+	GetHandleVerifier [0x014821B8+2678216]
+	GetHandleVerifier [0x012717AA+512954]
+	GetHandleVerifier [0x01270856+509030]
+	Ordinal0 [0x0118743B+1799227]
+	Ordinal0 [0x0118BB68+1817448]
+	Ordinal0 [0x0118BC55+1817685]
+	Ordinal0 [0x01195230+1856048]
+	BaseThreadInitThunk [0x75DEFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77E27B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E27B2E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\AUTOMATION WEB MEDIFE\SRC\Test\test_credenciales\test_credenciales_003.py", line 80, in test_credenciales_003
+    self.page_object_credenciales.click_menu_hamburgesa()
+  File "D:\AUTOMATION WEB MEDIFE\SRC\PageObjects\Modulos\page_object_credenciales.py", line 28, in click_menu_hamburgesa
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.menu_hamburgesa)).click()
+  File "D:\Automationprueba\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 81, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\Automationprueba\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 710, in _execute
+    return self._parent.execute(command, params)
+  File "D:\Automationprueba\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "D:\Automationprueba\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span _ngcontent-fmn-c85="" class="navbar-toggler-icon"></span> is not clickable at point (38, 24). Other element would receive the click: <div _ngcontent-fmn-c85="" class="side-menu-content pr-3 ng-star-inserted">...</div>
+  (Session info: headless chrome=105.0.5195.127)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011E78B3+2193587]
+	Ordinal0 [0x01180681+1771137]
+	Ordinal0 [0x010941A8+803240]
+	Ordinal0 [0x010C8C84+1019012]
+	Ordinal0 [0x010C6C48+1010760]
+	Ordinal0 [0x010C493B+1001787]
+	Ordinal0 [0x010C3699+997017]
+	Ordinal0 [0x010B9223+954915]
+	Ordinal0 [0x010DD7AC+1103788]
+	Ordinal0 [0x010B8C04+953348]
+	Ordinal0 [0x010DD9C4+1104324]
+	Ordinal0 [0x010EDAE2+1170146]
+	Ordinal0 [0x010DD5C6+1103302]
+	Ordinal0 [0x010B77E0+948192]
+	Ordinal0 [0x010B86E6+952038]
+	GetHandleVerifier [0x01490CB2+2738370]
+	GetHandleVerifier [0x014821B8+2678216]
+	GetHandleVerifier [0x012717AA+512954]
+	GetHandleVerifier [0x01270856+509030]
+	Ordinal0 [0x0118743B+1799227]
+	Ordinal0 [0x0118BB68+1817448]
+	Ordinal0 [0x0118BC55+1817685]
+	Ordinal0 [0x01195230+1856048]
+	BaseThreadInitThunk [0x75DEFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77E27B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E27B2E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 39.28 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

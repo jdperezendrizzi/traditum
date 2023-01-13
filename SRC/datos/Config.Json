@@ -1,0 +1,5 @@
+{
+"ambiente": ["https://accounts.google.com/"],
+"ambiente2": ["https://accounts.google.com/camdoctor-telemedicina-qa.web.app/"],
+"driver": "D:/AUTOMATION TRADITUM/SRC/chromedriver.exe"
+}
