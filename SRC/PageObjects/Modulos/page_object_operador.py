@@ -42,7 +42,6 @@ class page_object_operador:
     def click_btn_siguiente(self):
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.btn_siguiente)).click()
 
-    def click_random(self):
     def click_foto_credencial(self):
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.foto_credencial)).click()
 
