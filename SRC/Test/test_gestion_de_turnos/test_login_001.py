@@ -84,7 +84,7 @@ class TC_traditum_login_google(unittest.TestCase):
 
     def test_login_traditum(self):
 
-        time.sleep(12)
+        time.sleep(10)
         self.driver.get("https://camdoctor-telemedicina-qa.web.app/")
         self.traditum.click_operador()
         time.sleep(10)
